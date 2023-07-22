@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "elm-watch": "^1.1.2",
+    "parcel": "^2.9.3"
+  },
+  "scripts": {
+    "build": "elm-watch hot",
+    "serve": "parcel serve ./index.html",
+    "watch": "concurrently --kill-others \"npm run build\" \"npm run serve\""
+  }
+}
